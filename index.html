@@ -22,7 +22,9 @@
             var uniqueIDs = document.getElementById('uniqueId').value;
             uniqueIDs = uniqueIDs.split('\n');
             for(var id of uniqueIDs){
-                uniqueList.push(`'${id}'`)
+                if(id.length>0){
+                    uniqueList.push(`'${id}'`)
+                }
             }
             console.log(uniqueIDs);
             document.getElementById('output').value = uniqueList;
