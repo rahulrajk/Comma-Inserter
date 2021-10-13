@@ -1,0 +1,13 @@
+.center {
+    margin-left: auto;
+    margin-top: 50px;
+    margin-right: auto;
+    width: 50%;
+    border: 3px solid black;
+    box-shadow: 5px 5px 5px 5px #afafaf;
+    padding: 24px;
+  }
+
+.title{
+    margin-top: 32px;
+}
