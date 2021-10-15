@@ -24,8 +24,8 @@
         <!-- <button onclick="getData()" id="submit" >Submit</button><br/><br/> -->
         <br/>
         <!-- Output Text -->
-        <textarea id='output' placeholder="Find your Output here" class="u-full-width" rows="10" cols="50"></textarea>
-        <button id="btnCopy" data-clipboard-target="#uniqueId">Copy</button>
+        <textarea id="output" placeholder="Find your Output here" class="u-full-width" rows="10" cols="50"></textarea>
+        <button id="btnCopy" data-clipboard-target="#output">Copy</button>
         </div>
     </div>
     <script>
@@ -42,10 +42,12 @@
             console.log(uniqueIDs);
             document.getElementById('output').value = uniqueList;
         }
-
+        
+    </script>
+    
+    <script>
         //ClipboardJS Intialization - Added by Rohit
         let copyFunction = new ClipboardJS('#btnCopy');
-        
     </script>
 
 </body>
