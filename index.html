@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" integrity="sha512-5fsy+3xG8N/1PV5MIJz9ZsWpkltijBI48gBzQ/Z2eVATePGHOkMIn+xTDHIfTZFVb9GMpflF2wOWItqxAP2oLQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+    <style>
+        #resetBtn {margin-top:30px;}
+    </style>
 </head>
 <body>
     <div class='container'>
@@ -26,6 +29,7 @@
         <!-- Output Text -->
         <textarea id="output" placeholder="Find your Output here" class="u-full-width" rows="10" cols="50"></textarea>
         <button id="btnCopy" data-clipboard-target="#output">Copy</button>
+        <button id="resetBtn" onclick="resetFieldValue();">Reset</button>
         </div>
     </div>
     <script>
@@ -48,6 +52,12 @@
     <script>
         //ClipboardJS Intialization - Added by Rohit
         let copyFunction = new ClipboardJS('#btnCopy');
+        //Reset Button
+        function resetFieldValue() {
+        document.getElementById("uniqueId").value = "";
+        document.getElementById("output").value = "";
+        }
+        
     </script>
 
 </body>
